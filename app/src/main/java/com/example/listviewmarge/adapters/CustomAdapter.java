@@ -1,4 +1,4 @@
-package com.example.listviewmarge;
+package com.example.listviewmarge.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,13 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
+
+import com.example.listviewmarge.R;
+import com.example.listviewmarge.sortingfiles.ModelClassForSort;
 
 import java.util.List;
 
-public class CustomAdapter extends ArrayAdapter<Employee> {
-    public CustomAdapter(Context context, List<Employee> users) {
+public class CustomAdapter extends ArrayAdapter<ModelClassForSort> {
+    public CustomAdapter(Context context, List<ModelClassForSort> users) {
         super(context, 0, users);
      }
 
@@ -22,7 +24,7 @@ public class CustomAdapter extends ArrayAdapter<Employee> {
 
     String jelaName;
 
-    Employee user;
+    ModelClassForSort user;
 
     TextView tvYear, tvSalary;
 

@@ -1,11 +1,11 @@
-package com.example.listviewmarge;
+package com.example.listviewmarge.sortingfiles;
 
-public class modelCLass {
+public class ModelClassForSort {
 
-    int year;
-    int salary;
+    private int year;
+    private int salary;
 
-    public modelCLass(int year, int salary) {
+    public ModelClassForSort(int year, int salary) {
         this.year = year;
         this.salary = salary;
     }
