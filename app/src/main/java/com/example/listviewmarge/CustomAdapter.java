@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 import java.util.List;
@@ -45,6 +45,9 @@ public class CustomAdapter extends ArrayAdapter<Employee> {
 
          tvYear.setText(""+user.getYear());
          tvSalary.setText(""+user.getSalary());
+
+//         Toast.makeText(getContext(), ""+user.getYear(), Toast.LENGTH_SHORT).show();
+//         Toast.makeText(getContext(), ""+user.getSalary(), Toast.LENGTH_SHORT).show();
 
      //   String Sectore_name = user.getSectorName();
 

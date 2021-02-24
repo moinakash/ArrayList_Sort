@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,10 +52,17 @@ public class MainActivity extends AppCompatActivity {
         dataVals.add(new Employee(1997,7500));
         dataVals.add(new Employee(2001,3000));
         dataVals.add(new Employee(2006,8005));
+        dataVals.add(new Employee(2006,300));
+
+        //sortArrayList();
+
+        /*CustomAdapter customAdapter = new CustomAdapter(MainActivity.this,dataVals);
+        listView.setAdapter(customAdapter);*/
 
         Collections.sort(dataVals, new EmployeeChainedComparator(
-                new EmployeeSalaryComparator(),
-                new EmployeeYearComparator())
+                new EmployeeYearComparator(),
+                new EmployeeSalaryComparator())
+
         );
 
         for (Employee emp : dataVals) {
@@ -70,10 +80,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
-
     }
+
+
+//    private void sortArrayList(){
+//        Collections.sort(dataVals, new Comparator<Employee>() {
+//            @Override
+//            public int compare(Employee o1, Employee o2) {
+//
+//                Toast.makeText(MainActivity.this, ""+(o1.getYear() - o1.getYear()), Toast.LENGTH_SHORT).show();
+//                return o1.getYear() - o1.getYear();
+//            }
+//        });
+//        CustomAdapter customAdapter = new CustomAdapter(MainActivity.this,dataVals2);
+//        listView.setAdapter(customAdapter);
+//
+//    }
 }
