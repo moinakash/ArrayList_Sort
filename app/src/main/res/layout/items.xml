@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/idYear"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="#FFEB3B"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/idSalary"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="#4CAF50"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
