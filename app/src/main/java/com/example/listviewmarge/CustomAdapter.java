@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CustomAdapter extends ArrayAdapter<modelCLass> {
-    public CustomAdapter(Context context, List<modelCLass> users) {
+public class CustomAdapter extends ArrayAdapter<Employee> {
+    public CustomAdapter(Context context, List<Employee> users) {
         super(context, 0, users);
      }
 
@@ -22,7 +22,7 @@ public class CustomAdapter extends ArrayAdapter<modelCLass> {
 
     String jelaName;
 
-    modelCLass user;
+    Employee user;
 
     TextView tvYear, tvSalary;
 
